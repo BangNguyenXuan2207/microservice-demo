@@ -19,12 +19,12 @@ spring:
         - id: CATEGORY-SERVICE
           uri: lb://CATEGORY-SERVICE
           predicates:
-            - Path=/category/**
+            - Path=/categorys/**
 
         - id: PRODUCT-SERVICE
           uri: lb://PRODUCT-SERVICE
           predicates:
-            - Path=/product/**
+            - Path=/products/**
 
 
 eureka:
